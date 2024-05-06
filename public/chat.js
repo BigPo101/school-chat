@@ -13,7 +13,7 @@ const form = document.getElementById('chat-form');
 const input = document.getElementById('message');
 
 form.addEventListener('submit', (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Prevent the default form submission behavior
     const message = input.value;
     if (message.trim() !== '') {
         socket.emit('chat message', { username, message });
