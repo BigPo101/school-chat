@@ -1,0 +1,24 @@
+<!-- chat.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Chatroom</title>
+    <link rel="icon" type="image/png" href="textbox.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the School Chatroom <span id="username"></span></h1>
+        <div id="messages"></div>
+        <form id="chat-form">
+            <input type="text" id="message" placeholder="Type your message..." autocomplete="off" required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>
